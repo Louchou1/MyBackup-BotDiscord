@@ -6,7 +6,7 @@ const client = new Discord.Client();
 const config = require('./config.json');
 
 client.on("ready", function() {
-    client.user.setActivity(`#BackYourServers ❤️ | ${client.guilds.cache.size} guilds`, { type: "PLAYING" }).catch(console.error);
+    client.user.setActivity(`#BackYourServers 🖤 | ${client.guilds.cache.size} guilds`, { type: "PLAYING" }).catch(console.error);
     console.log("C'est bon, j'ai reussi zeubi !");
   });
     
