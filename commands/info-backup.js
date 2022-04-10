@@ -31,7 +31,7 @@ exports.run = async (client, message, args) => {
     }).catch((err) => {
 
         if (err === 'No backup found')
-            return message.channel.send(":x: Aucune sauvegarde trouvée pour l'ID '+backupID+'!");
+            return message.channel.send(":x: Aucune sauvegarde trouvée pour l'ID" '+backupID+'!);
         else
             return message.channel.send(":x: Une erreur s'est produite :"+(typeof err === 'string') ? err : JSON.stringify(err));
 
